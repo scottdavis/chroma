@@ -125,7 +125,7 @@ module Chroma
           request
         end
 
-        private def raise_failure_error(result)
+        def raise_failure_error(result)
           case result.failure.error
           in Exception => exception
             raise Chroma::APIConnectionError.new(exception.message)
