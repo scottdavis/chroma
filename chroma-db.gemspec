@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   spec.add_dependency "dry-monads", "~> 1.6"
-  spec.add_dependency "zeitwerk", "~> 2.6.0"
+  spec.add_dependency "zeitwerk"
 
   if ENV["RELEASING_GEM"].nil? && File.directory?(File.join(__dir__, ".git"))
     spec.add_runtime_dependency "ruby-next", "~> 1.0", ">= 1.0.3"
